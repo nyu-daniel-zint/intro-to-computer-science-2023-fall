@@ -487,8 +487,8 @@ veggies.add("tomato"); // add tomato (a fruit) to our list of vegetables
 veggies.add("crispy lettuce"); // add crispy lettuce to our list of vegetables
 veggies.add("ketchup"); // add ketchup (a sweetened condiment) to our list of vegetables
 veggies.add("bacon"); // add bacon (an animal product) to our list of vegetables
-veggies.remove("avocado"); // remove avocado from our list of vegetables
 int pos = veggies.indexOf("ketchup"); // returns 3, since "ketchup" is at position 3
+veggies.remove(veggies.indexOf("avocado")); // remove avocado from our list of vegetables
 String sweetStuff = veggies.get(pos); // returns "ketchup", which is at position 3
 ```
 
