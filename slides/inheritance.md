@@ -89,7 +89,7 @@ public class A {
         return this.message;
     }
     public void setMessage(String message) {
-        if (msg.length > 0) this.message = message;
+        if (message.length() > 0) this.message = message;
     }
 }
 ```
@@ -308,7 +308,7 @@ template: polymorphism
 
 ## Application
 
-Polymorphism can be useful when we want to store a bunch of related objects of different-but-related types into an array or other grouping data structure in order to perform some kind of batch operation on them.
+Polymorphism can be useful when we want to store a bunch of related objects of different but related types into an array or other grouping data structure in order to perform some kind of batch operation on them.
 
 --
 
@@ -528,7 +528,7 @@ public class App extends PApplet { ... }
 
 --
 
-- In our animations we may want to have donkeys floating across the screen, so we might create a `Donkey` class to encapsulate all things related to donkeys - their width, height, x position, y position, etc.
+- In our animations, we may want to have donkeys floating across the screen, so we might create a `Donkey` class to encapsulate all things related to donkeys - their width, height, x position, y position, etc.
 
 ```java
 public class Donkey { ... }
@@ -548,7 +548,7 @@ Our `Donkey` objects don't need to pop open windows, draw ellipses, detect mouse
 
 --
 
-- This is a good candidate for composition, not inheritance - the vast majority of the `PApplet` code is unrelated and undesireable to `Donkey`.
+- This is a good candidate for composition, not inheritance - the vast majority of the `PApplet` code is unrelated and undesirable to `Donkey`.
 
 --
 
@@ -594,7 +594,7 @@ public class App extends PApplet {
 
 --
 
-- We would normally use a `setter` to set the value of the `myDonkey` property, but have simplified this code in order to focus on the conceptual point.
+- We would normally use a `setter` to set the value of the `myDonkey` property but have simplified this code in order to focus on the conceptual point.
 
 ---
 
@@ -606,7 +606,7 @@ name: evils
 
 ## Concept
 
-There are certainly those who criticise object-oriented progrmaming, and some specifically who disapprove of Java's inheritance model.
+There are certainly those who criticise object-oriented programing, and some specifically who disapprove of Java's inheritance model.
 
 --
 
